@@ -24,7 +24,7 @@
  */
 export const initWidget = ({
     token,
-    widgetSource = "http://localhost:3000/widget",
+    widgetSource = "https://www.parleyai.net/widget",
     onAccept = () => { },
     onMessage = () => { },
 }: {
