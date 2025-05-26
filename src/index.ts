@@ -37,6 +37,7 @@ export const initWidget = ({
             price: number;
             accepted: boolean;
         },
+        secretKey: string;
     }) => void;
     onMessage?: (data: {
         type: string;
@@ -54,7 +55,7 @@ export const initWidget = ({
 
     window.addEventListener('message', (event) => {
         const data = event.data as {
-            token: string;
+            secretKey: string;
             type: string;
             message: string;
             data: {
